@@ -1,12 +1,18 @@
-import React from 'react'
+import React from "react";
 
-function Note(props){
-    return (
-        <div className="note">
-            <h1>{props.title}</h1>
-            <p>{props.discription}</p>
-        </div>
-    )
-    }
+function Note(props) {
 
-    export default Note
+  function handelClick(){
+    props.onDelete(props.id)
+  }
+
+  return (
+    <div className="note">
+      <h1>{props.title}</h1>
+      <p>{props.content}</p>
+      <button onClick={handelClick}>DELETE</button>
+    </div>
+  )
+}
+
+export default Note;
