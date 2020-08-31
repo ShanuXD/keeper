@@ -8,7 +8,8 @@ html{
 }
 
 body{
-    padding:0 16px;
+    background: #eee;
+    padding:0
 }
 header{
     background-color: #f5ba13;;
@@ -51,6 +52,8 @@ footer p{
 .note p{
     font-size:1.1em;
     margin-bottom: 10px;
+    white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 
@@ -65,7 +68,7 @@ footer p{
     outline: none;
   }
   
-  form {
+form.create-note {
     position: relative;
     width: 480px;
     margin: 30px auto 20px auto;
@@ -73,7 +76,7 @@ footer p{
     padding: 15px;
     border-radius: 7px;
     box-shadow: 0 1px 5px rgb(138, 137, 137);
-  }
+}
   form input,
   form textarea {
     width: 100%;
@@ -84,7 +87,7 @@ footer p{
     font-family: inherit;
     resize: none;
   }
-  form button {
+  form.create-note button {
     position: absolute;
     right: 18px;
     bottom: -18px;
@@ -98,3 +101,4 @@ footer p{
     cursor: pointer;
     outline: none;
   }
+  

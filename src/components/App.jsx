@@ -10,6 +10,10 @@ function App() {
     content: 'Hello World'}])
 
 function addNote(newNote){
+  console.log(newNote);
+  if (newNote.title==='' && newNote.content===''){
+    return
+  }
 setNotes(prevNotes=>{
    return [...prevNotes,newNote]
 })
